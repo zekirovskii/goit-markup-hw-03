@@ -70,6 +70,7 @@ header .nav .logo2 {
 header .nav .logo3 address {
   font-family: "Roboto", sans-serif;
   display: flex;
+  align-items: center;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -170,7 +171,7 @@ header .nav .logo2 .list1 a {
   vertical-align: center;
 }
 /* OUR TEAM */
-.card {
+.card-sec .container {
   width: 1440px;
   background: #f4f4fd;
   display: flex;
@@ -178,7 +179,7 @@ header .nav .logo2 .list1 a {
   padding-bottom: 240px;
 }
 
-.ourteam {
+.card-sec .container .ourteam {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -190,7 +191,7 @@ header .nav .logo2 .list1 a {
   text-align: center;
   color: var(--h2-color);
 }
-.card ul {
+.card-sec .container ul {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -199,26 +200,26 @@ header .nav .logo2 .list1 a {
   padding: 72px 156px 120px 156px;
 }
 
-.card li {
+.card-sec .container li {
   display: inline-block;
   width: 264px;
   height: 104px;
   vertical-align: center;
 }
-.card .camila,
-.card .mark,
-.card .tom,
-.card .daniel {
+.card-sec .container .camila,
+.card-sec .container .mark,
+.card-sec .container .tom,
+.card-sec .container .daniel {
   width: 264px;
   display: flex;
   flex-direction: column;
   gap: 0;
 }
 
-.card .mark-text,
-.card .tom-text,
-.card .camila-text,
-.card .daniel-text {
+.card-sec .container .mark-text,
+.card-sec .container .tom-text,
+.card-sec .container .camila-text,
+.card-sec .container .daniel-text {
   width: 264px;
   height: 120px;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
@@ -232,22 +233,22 @@ header .nav .logo2 .list1 a {
   gap: 8px;
 }
 
-.card .mark-text h3,
-.card .tom-text h3,
-.card .camila-text h3,
-.card .daniel-text h3 {
+.card-sec .container .mark-text h3,
+.card-sec .container .tom-text h3,
+.card-sec .container .camila-text h3,
+.card-sec .container .daniel-text h3 {
   font-size: 18px;
 }
 
-.card .mark-text p,
-.card .tom-text p,
-.card .camila-text p,
-.card .daniel-text p {
+.card-sec .container .mark-text p,
+.card-sec .container .tom-text p,
+.card-sec .container .camila-text p,
+.card-sec .container .daniel-text p {
   font-size: 14px;
 }
 
 /* OUR PORTFOLIO*/
-.portfolio {
+.portfolio-sec .container {
   width: 1128px;
   display: flex;
   flex-direction: column;
@@ -257,7 +258,7 @@ header .nav .logo2 .list1 a {
   margin: 120px 156px;
   gap: 72px;
 }
-.portfolio .ourportfolio {
+.portfolio-sec .container .ourportfolio {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -272,7 +273,7 @@ header .nav .logo2 .list1 a {
   align-items: center;
 }
 
-.portfolio .portfolio-one ul {
+.portfolio-sec .container .portfolio-one ul {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -281,7 +282,7 @@ header .nav .logo2 .list1 a {
   gap: 24px;
 }
 
-.portfolio .portfolio-two ul {
+.portfolio-sec .container .portfolio-two ul {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -290,7 +291,7 @@ header .nav .logo2 .list1 a {
   gap: 24px;
 }
 
-.portfolio .portfolio-one li {
+.portfolio-sec .container .portfolio-one li {
   display: inline-block;
   width: 360px;
   vertical-align: center;
@@ -298,7 +299,7 @@ header .nav .logo2 .list1 a {
   flex-direction: row;
   flex-wrap: nowrap;
 }
-.portfolio li {
+.portfolio-sec .container li {
   display: inline-block;
   width: 360px;
   vertical-align: center;
@@ -347,13 +348,13 @@ header .nav .logo2 .list1 a {
 
 /* MAİN BİTİŞ*/
 /* Footer */
-.last-box {
+.ftr .container {
   width: 1440px;
   font-family: "Raleway", sans-serif;
   background: var(--h2-color);
   position: relative;
 }
-.last-box > .last-logo {
+.ftr .container > .last-logo {
   width: 264px;
   background: #2e2f42;
   position: relative;
@@ -365,30 +366,31 @@ header .nav .logo2 .list1 a {
   padding-bottom: 100px;
 }
 
-.last-box .last-logo .last-a {
+.ftr .container .last-logo .last-a {
   font-weight: 700;
   font-size: 18px;
   line-height: 1.16667;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-.last-box .last-logo .last-a a {
+.ftr .container .last-logo .last-a a {
   color: var(--ırıs-color);
 }
-.last-box .last-logo p {
+.ftr .container .last-logo .last-p {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
-  width: 264px;
+  width:264px;
 }
 
-.last-box .last-logo .last-a .color-logo {
+.ftr .container .last-logo .last-a .color-logo {
   color: #f4f4fd;
 }
 
-.last-box a {
+.ftr .container a {
   text-decoration: none;
+  display: inline-block;
 }
