@@ -167,24 +167,38 @@ a {
 }
 
 /* BEYAZ YAZILI ALAN */
-.white-text {
-  width: 1128px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
+.white-sec{
+  padding: 120px 0;
+  width: 1158px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.white-sec .white-text .visually-hidden{
+  position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
 }
 
-.white-text ul {
+.white-text .emc-list {
   display: flex;
-  padding: 120px 156px;
+  padding: 0 156px;
+  margin-left: 20px;
   gap: 24px;
   list-style-type: none;
 }
 
-.white-text li {
+.white-text .emc-item {
+  width: calc((100% - 72px) / 4);
   display: inline-block;
   width: 264px;
   vertical-align: center;
+}
+
+.white-text .emc-item .white-1{
+  margin-bottom: 8px;
 }
 /* OUR TEAM */
 .card-sec .container {
