@@ -114,7 +114,7 @@ a {
   padding: 24px 0;
 }
 
-.header .container .main-nav .contact-info .contact_ul .contact-item {
+.header .container .contact-info .contact_ul .contact-item {
   padding: 24px 0;
 }
 
@@ -124,16 +124,19 @@ a {
 /* HEADER BİTİŞ*/
 
 /* BÜYÜK MAVİ ALAN*/
-.title {
-  width: 1440px;
+
+.blue-section .container {
+  width: 1158px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   background: #2e2f42;
   align-items: center;
   gap: 48px;
+  padding: 188px 0;
 }
 
-.title-text {
+.blue-text {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 56px;
@@ -142,14 +145,15 @@ a {
   text-align: center;
   color: #fff;
   position: relative;
-  padding-top: 168px;
+  max-width: 496px;
 }
 
-.title button {
+.blue-section .container button {
   font-family: "Roboto", sans-serif;
   border-radius: 4px;
   padding: 16px 32px;
-  width: 169px;
+  min-width: 169px;
+  height: 56px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -161,7 +165,7 @@ a {
   position: relative;
   cursor: pointer;
   white-space: nowrap;
-  margin-bottom: 186px;
+  border: none;
 }
 
 /* BEYAZ YAZILI ALAN */
