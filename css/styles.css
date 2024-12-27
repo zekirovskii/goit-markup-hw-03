@@ -174,7 +174,7 @@ a {
     flex-direction: row;
     flex-wrap: nowrap;
 }
-.white-sec .container .visually-hidden{
+.white-sec .visually-hidden{
   position: absolute;
     width: 1px;
     height: 1px;
