@@ -174,7 +174,7 @@ a {
     flex-direction: row;
     flex-wrap: nowrap;
 }
-.white-sec .white-text .visually-hidden{
+.white-sec .container .visually-hidden{
   position: absolute;
     width: 0;
     height: 0;
@@ -182,7 +182,7 @@ a {
     clip: rect(0, 0, 0, 0);
 }
 
-.white-text .emc-list {
+.container .emc-list {
   display: flex;
   padding: 0 156px;
   margin-left: 20px;
@@ -190,14 +190,14 @@ a {
   list-style-type: none;
 }
 
-.white-text .emc-item {
+.container .emc-item {
   width: calc((100% - 72px) / 4);
   display: inline-block;
   width: 264px;
   vertical-align: center;
 }
 
-.white-text .emc-item .white-1{
+.container .emc-item .white-1{
   margin-bottom: 8px;
 }
 /* OUR TEAM */
