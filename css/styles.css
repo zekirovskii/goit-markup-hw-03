@@ -125,15 +125,15 @@ a {
 
 /* BÜYÜK MAVİ ALAN*/
 
-.blue-section .container {
-  width: 1158px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  background: #2e2f42;
-  align-items: center;
-  gap: 48px;
+.blue-section{
   padding: 188px 0;
+  width: 1158px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    background: #2e2f42;
+    align-items: center;
+    gap: 48px;
 }
 
 .blue-text {
@@ -149,23 +149,21 @@ a {
 }
 
 .blue-section .container button {
-  font-family: "Roboto", sans-serif;
-  border-radius: 4px;
-  padding: 16px 32px;
-  min-width: 169px;
-  height: 56px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  color: #fff;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  background: var(--ırıs-color);
-  text-align: center;
-  position: relative;
-  cursor: pointer;
-  white-space: nowrap;
-  border: none;
+  background-color: #4d5ae5;
+    display: block;
+    margin: 0 auto;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 30px;
+    border-radius: 4px;
+    padding: 16px 32px;
+    min-width: 169px;
+    height: 56px;
 }
 
 /* BEYAZ YAZILI ALAN */
