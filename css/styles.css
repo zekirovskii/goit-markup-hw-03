@@ -16,95 +16,102 @@ body {
   background-color: #fff;
   font-weight: 400;
 }
-.container {
-  position: relative;
-  overflow: hidden;
-  width: 1440px;
-  margin: 0 auto;
-}
-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  position: relative;
-  overflow: hidden;
-  width: 1440px;
-  padding: 24px 0;
-  align-items: center;
-  font-family: "Raleway", sans-serif;
-  border-bottom: 1px solid #e7e9fc;
-}
+/* Header */
 
-.color-logo {
-  color: #2e2f42;
-}
-
-.box-1 > div a {
-  text-decoration: none;
-}
-header .nav {
-  display: flex;
-  position: relative;
-  flex-direction: row;
-  justify-content: flex-end;
-}
-header .logo1 a {
-  color: var(--ırıs-color);
-}
-header .logo1 {
-  width: 115px;
-  font-size: 18px;
-  line-height: 1.16667;
-  letter-spacing: 0.03em;
-  text-align: center;
-  padding-left: 156px;
-}
-
-header .nav .logo2 {
-  font-family: "Roboto", sans-serif;
-  width: 261px;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-}
-header .nav .logo3 address {
-  font-family: "Roboto", sans-serif;
-  display: flex;
-  align-items: center;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #434455;
-  padding-left: 332px;
-  padding-right: 156px;
-  gap: 40px;
-}
-header .nav .logo2 .list1 li a:hover {
-  color: #3c49c0;
-}
-
-header .nav .logo3 address p:hover {
-  color: #3c49c0;
-  cursor: pointer;
-}
-
-.title button:hover {
-  background-color: #404bbf;
-}
-
-header .nav .logo2 .list1 {
-  list-style-type: none;
-  display: flex;
-  justify-content: space-between;
+ul {
+  list-style: none;
   margin: 0;
   padding: 0;
-  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.header {
+  background-color: #ffffff;
+  /* Arka plan beyaz */
+  color: #434455;
+  border-bottom: 1px solid #e7e9fc;
+  /* İnce bir alt çizgi */
+  width: 1440px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1440px;
+  /* İçerik genişliği */
+  margin: 0 auto;
+  /* Ortalamak için */
+  padding: 0 20px;
+  /* Yanlardan boşluk */
+}
+
+.nav_list {
+  display: flex;
+  gap: 30px;
+  font-weight: 600;
+  margin-right: 0;
+  /* Sağdaki boşluğu kaldırdık */
+}
+
+.nav_list li a {
+  font-size: 16px;
+  font-weight: 600;
+  /* Menü yazılarını daha belirgin hale getirdim */
+}
+
+.nav_list li a:hover {
+  color: #3c49c0;
+}
+
+.header-logo {
+  font-family: Raleway, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #4d5ae5;
+  /* "WEB" kısmının rengi */
+}
+
+.header-logo span {
+  color: #2e2f42;
+  /* "STUDIO" kısmının rengi */
+}
+
+.contact-info {
+  font-size: 14px;
+  color: #434455;
+  margin: auto 0;
+}
+
+.contact-info a:hover {
+  color: #3c49c0;
+}
+
+.header .container .contact-info .contact_ul {
+  display: flex;
   gap: 40px;
 }
 
-header .nav .logo2 .list1 a {
-  color: #2e2f42;
+.header .container {
+  display: flex;
+  width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.header .container .nav .header-logo {
+  margin-right: 76px;
+}
+
+.header .container .nav .nav_list {
+  gap: 40px;
+}
+
+.header .container .nav .nav_list .nav_li {
+  padding: 24px 0;
 }
 
 /* HEADER BİTİŞ*/
@@ -348,49 +355,53 @@ header .nav .logo2 .list1 a {
 
 /* MAİN BİTİŞ*/
 /* Footer */
-.ftr .container {
-  width: 1440px;
-  font-family: "Raleway", sans-serif;
-  background: var(--h2-color);
-  position: relative;
-}
-.ftr .container > .last-logo {
-  width: 264px;
-  background: #2e2f42;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  padding-top: 100px;
-  padding-left: 156px;
-  padding-bottom: 100px;
+.footer {
+  background-color: #2e2f42;
+  padding: 100px 0;
+  width: 100%;
+  margin-top: 100px;
 }
 
-.ftr .container .last-logo .last-a {
-  font-weight: 700;
+.footer .container {
+  max-width: 1158px;
+  /* İçerik genişliği */
+  margin: 0 auto;
+  /* Sayfa ortalaması */
+}
+
+.footer-logo {
+  font-family: Raleway, sans-serif;
+  /* Yazı tipi */
   font-size: 18px;
-  line-height: 1.16667;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-}
-.ftr .container .last-logo .last-a a {
-  color: var(--ırıs-color);
-}
-.ftr .container .last-logo .last-p {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
+  /* Yazı boyutu */
+  font-weight: 700;
+  /* Kalın yazı */
   line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #f4f4fd;
-  width:264px;
-}
-
-.ftr .container .last-logo .last-a .color-logo {
-  color: #f4f4fd;
-}
-
-.ftr .container a {
+  /* Satır yüksekliği */
+  color: #4d5ae5;
+  /* Logo rengi */
   text-decoration: none;
+  /* Alt çizgiyi kaldır */
   display: inline-block;
+  margin-bottom: 16px;
+  /* Alt boşluk */
+}
+
+.footer-logo span {
+  color: #f4f4fd;
+  /* "STUDIO" kısmının rengi */
+}
+
+.footer-text {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  /* Yazı boyutu */
+  line-height: 1.5;
+  /* Satır yüksekliği */
+  color: #e7e9fc;
+  /* Metin rengi */
+  max-width: 264px;
+  /* Metnin genişliği */
+  margin: 0;
+  /* Varsayılan boşluğu kaldır */
 }
