@@ -176,13 +176,27 @@ a {
 }
 .white-sec .container .visually-hidden{
   position: absolute;
-    width: 0;
-    height: 0;
+    /* Belirli bir noktaya sabitle */
+    width: 1px;
+    /* Çok küçük bir genişlik */
+    height: 1px;
+    /* Çok küçük bir yükseklik */
+    margin: -1px;
+    /* Negatif margin ile tamamen gizle */
+    padding: 0;
+    /* Varsayılan padding'i kaldır */
+    border: 0;
+    /* Varsayılan border'ı kaldır */
     overflow: hidden;
+    /* Taşmayı gizle */
     clip: rect(0, 0, 0, 0);
+    /* Tarayıcıdan tamamen gizle */
+    white-space: nowrap;
+    /* Tek satır halinde tut */
+    clip-path: inset(50%);
 }
 
-.container .emc-list {
+.white-sec .container .emc-list {
   display: flex;
   padding: 0 156px;
   margin-left: 20px;
@@ -190,14 +204,14 @@ a {
   list-style-type: none;
 }
 
-.container .emc-item {
+.white-sec .container .emc-item {
   width: calc((100% - 72px) / 4);
   display: inline-block;
   width: 264px;
   vertical-align: center;
 }
 
-.container .emc-item .white-1{
+.white-sec .container .emc-item .white-1{
   margin-bottom: 8px;
 }
 /* OUR TEAM */
