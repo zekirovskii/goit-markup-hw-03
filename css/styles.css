@@ -3,6 +3,7 @@
   --ırıs-color: #4d5ae5;
   --p-color: #434455;
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -16,127 +17,117 @@ body {
   background-color: #fff;
   font-weight: 400;
 }
-/* Header */
 
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-.header {
-  background-color: #ffffff;
-  /* Arka plan beyaz */
-  color: #434455;
-  border-bottom: 1px solid #e7e9fc;
-  /* İnce bir alt çizgi */
+.container {
+  position: relative;
+  overflow: hidden;
   width: 1440px;
+  margin: 0 auto;
 }
 
-.main-nav {
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+  width: 1440px;
+  padding: 24px 0;
+  align-items: center;
+  font-family: "Raleway", sans-serif;
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.color-logo {
+  color: #2e2f42;
+}
+
+.box-1>div a {
+  text-decoration: none;
+}
+
+header .nav {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+header .logo1 a {
+  color: var(--ırıs-color);
+}
+
+header .logo1 {
+  width: 115px;
+  font-size: 18px;
+  line-height: 1.16667;
+  letter-spacing: 0.03em;
+  text-align: center;
+  padding-left: 156px;
+}
+
+header .nav .logo2 {
+  font-family: "Roboto", sans-serif;
+  width: 261px;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+header .nav .logo3 address {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+  padding-left: 332px;
+  padding-right: 156px;
+  gap: 40px;
+}
+
+header .nav .logo2 .list1 li a:hover {
+  color: #3c49c0;
+}
+
+header .nav .logo3 address p:hover {
+  color: #3c49c0;
+  cursor: pointer;
+}
+
+.title button:hover {
+  background-color: #404bbf;
+}
+
+header .nav .logo2 .list1 {
+  list-style-type: none;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  max-width: 1440px;
-  /* İçerik genişliği */
-  margin: 0 auto;
-  /* Ortalamak için */
-  padding: 0 20px;
-  /* Yanlardan boşluk */
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  gap: 40px;
 }
 
-.nav-list {
-  display: flex;
-  gap: 30px;
-  font-weight: 600;
-  margin-right: 50px;
-  /* Sağdaki boşluğu kaldırdık */
-}
-
-.nav-list .nav-item a {
-  font-size: 16px;
-  font-weight: 600;
-  /* Menü yazılarını daha belirgin hale getirdim */
-}
-
-.nav-list .nav-item a:hover {
-  color: #3c49c0;
-}
-
-.header-logo {
-  font-family: Raleway, sans-serif;
-  font-size: 20px;
-  font-weight: 700;
-  color: #4d5ae5;
-  /* "WEB" kısmının rengi */
-}
-
-.header-logo span {
+header .nav .logo2 .list1 a {
   color: #2e2f42;
-  /* "STUDIO" kısmının rengi */
 }
-
-.contact-info {
-  font-size: 14px;
-  color: #434455;
-  margin: auto 0;
-}
-
-.contact-info a:hover {
-  color: #3c49c0;
-}
-
-.header .container .contact-info .contact_ul {
-  display: flex;
-  gap: 40px;
-}
-
-.header .container {
-  display: flex;
-  width: 1158px;
-  padding: 0 15px;
-  margin: 0 auto;
-}
-
-.header .container .main-nav .header-logo {
-  margin-right: 76px;
-}
-
-.header .container .main-nav .nav-list {
-  gap: 40px;
-}
-
-.header .container .main-nav .nav-list .nav-item{
-  padding: 24px 0;
-}
-
-.header .container .contact-info .contact_ul .contact-item {
-  padding: 24px 0;
-}
-
-
-
 
 /* HEADER BİTİŞ*/
 
 /* BÜYÜK MAVİ ALAN*/
-
-.blue-section{
-  padding: 188px 0;
-  width: 1158px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    background: #2e2f42;
-    align-items: center;
-    gap: 48px;
+.title {
+  width: 1440px;
+  display: flex;
+  flex-direction: column;
+  background: #2e2f42;
+  align-items: center;
+  gap: 48px;
 }
 
-.blue-text {
+.title-text {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 56px;
@@ -145,84 +136,72 @@ a {
   text-align: center;
   color: #fff;
   position: relative;
-  max-width: 496px;
+  padding-top: 168px;
 }
 
-.blue-section .container button {
-  background-color: #4d5ae5;
-    display: block;
-    margin: 0 auto;
-    color: #ffffff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    font-weight: 500;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    margin-top: 30px;
-    border-radius: 4px;
-    padding: 16px 32px;
-    min-width: 169px;
-    height: 56px;
+.title button {
+  font-family: "Roboto", sans-serif;
+  border-radius: 4px;
+  padding: 16px 32px;
+  width: 169px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background: var(--ırıs-color);
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+  white-space: nowrap;
+  margin-bottom: 186px;
 }
 
 /* BEYAZ YAZILI ALAN */
-.white-sec{
-  padding: 120px 0;
-  width: 1158px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-}
-.white-sec .container .visually-hidden{
-  position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-    border: 0;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
+.white-text {
+  width: 1128px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
 
-.white-sec .container .emc-list {
+.white-text ul {
   display: flex;
-  padding: 0 156px;
-  margin-left: 20px;
+  padding: 120px 156px;
   gap: 24px;
   list-style-type: none;
 }
 
-.white-sec .container .emc-item{
- width: calc((100% - 72px) / 4); 
+.white-text li {
+  display: inline-block;
+  width: 264px;
+  vertical-align: center;
 }
 
-.white-sec .container .emc-item .white-one{
-  margin-bottom: 8px;
-}
 /* OUR TEAM */
-.card-sec{
-  padding: 120px 0;
+.card-sec .container {
   width: 1440px;
-    background: #f4f4fd;
-    display: flex;
-    flex-direction: column;
+  background: #f4f4fd;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 240px;
 }
 
 .card-sec .container .ourteam {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  padding-top: 120px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11111;
   letter-spacing: 0.02em;
   text-align: center;
   color: var(--h2-color);
-  margin-bottom: 72px;
 }
-.card-sec .container .ourteam-list {
+
+.card-sec .container ul {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -231,22 +210,33 @@ a {
   padding: 72px 156px 120px 156px;
 }
 
-.card-sec .container .ourteam-list .ourteam-item {
-  border-radius: 0px 0px 4px 4px;
-  width: calc((100% - 72px) / 4);
+.card-sec .container li {
+  display: inline-block;
+  width: 264px;
+  height: 104px;
+  vertical-align: center;
 }
-.card-sec .container .ourteam-list .ourteam-item .ourteam-card{
-  padding: 32px 0;
+
+.card-sec .container .camila,
+.card-sec .container .mark,
+.card-sec .container .tom,
+.card-sec .container .daniel {
+  width: 264px;
   display: flex;
   flex-direction: column;
   gap: 0;
 }
 
-.card-sec .container .ourteam-list .ourteam-item .ourteam-card .ourteam-text{
+.card-sec .container .mark-text,
+.card-sec .container .tom-text,
+.card-sec .container .camila-text,
+.card-sec .container .daniel-text {
   width: 264px;
+  height: 120px;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   background: #fff;
+  text-align: center;
   display: flex;
   position: relative;
   flex-direction: column;
@@ -254,15 +244,18 @@ a {
   gap: 8px;
 }
 
-.card-sec .container .ourteam-list .ourteam-item .ourteam-card .ourteam-text .ourteam-title {
+.card-sec .container .mark-text h3,
+.card-sec .container .tom-text h3,
+.card-sec .container .camila-text h3,
+.card-sec .container .daniel-text h3 {
   font-size: 18px;
-  text-align: center;
-  margin-bottom: 8px;
 }
 
-.card-sec .container .ourteam-list .ourteam-item .ourteam-card .ourteam-text .ourteam-job{
+.card-sec .container .mark-text p,
+.card-sec .container .tom-text p,
+.card-sec .container .camila-text p,
+.card-sec .container .daniel-text p {
   font-size: 14px;
-  text-align: center;
 }
 
 /* OUR PORTFOLIO*/
@@ -276,6 +269,7 @@ a {
   margin: 120px 156px;
   gap: 72px;
 }
+
 .portfolio-sec .container .ourportfolio {
   display: flex;
   flex-direction: row;
@@ -317,11 +311,13 @@ a {
   flex-direction: row;
   flex-wrap: nowrap;
 }
+
 .portfolio-sec .container li {
   display: inline-block;
   width: 360px;
   vertical-align: center;
 }
+
 .portfolio1,
 .portfolio2,
 .portfolio3,
@@ -366,53 +362,52 @@ a {
 
 /* MAİN BİTİŞ*/
 /* Footer */
-.footer {
-  background-color: #2e2f42;
-  padding: 100px 0;
-  width: 100%;
-  margin-top: 100px;
+.ftr .container {
+  width: 1440px;
+  font-family: "Raleway", sans-serif;
+  background: var(--h2-color);
+  position: relative;
 }
 
-.footer .container {
-  max-width: 1158px;
-  /* İçerik genişliği */
-  margin: 0 auto;
-  /* Sayfa ortalaması */
+.ftr .container>.last-logo {
+  width: 264px;
+  background: #2e2f42;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-top: 100px;
+  padding-left: 156px;
+  padding-bottom: 100px;
 }
 
-.footer-logo {
-  font-family: Raleway, sans-serif;
-  /* Yazı tipi */
-  font-size: 18px;
-  /* Yazı boyutu */
+.ftr .container .last-logo .last-a {
   font-weight: 700;
-  /* Kalın yazı */
-  line-height: 1.5;
-  /* Satır yüksekliği */
-  color: #4d5ae5;
-  /* Logo rengi */
-  text-decoration: none;
-  /* Alt çizgiyi kaldır */
-  display: inline-block;
-  margin-bottom: 16px;
-  /* Alt boşluk */
+  font-size: 18px;
+  line-height: 1.16667;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
-.footer-logo span {
-  color: #f4f4fd;
-  /* "STUDIO" kısmının rengi */
+.ftr .container .last-logo .last-a a {
+  color: var(--ırıs-color);
 }
 
-.footer-text {
-  font-family: Roboto, sans-serif;
+.ftr .container .last-logo .last-p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
   font-size: 16px;
-  /* Yazı boyutu */
   line-height: 1.5;
-  /* Satır yüksekliği */
-  color: #e7e9fc;
-  /* Metin rengi */
-  max-width: 264px;
-  /* Metnin genişliği */
-  margin: 0;
-  /* Varsayılan boşluğu kaldır */
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+  width: 264px;
+}
+
+.ftr .container .last-logo .last-a .color-logo {
+  color: #f4f4fd;
+}
+
+.ftr .container a {
+  text-decoration: none;
+  display: inline-block;
 }
