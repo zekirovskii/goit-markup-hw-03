@@ -202,27 +202,27 @@ a {
   margin-bottom: 8px;
 }
 /* OUR TEAM */
-.card-sec .container {
+.card-sec{
+  padding: 120px 0;
   width: 1440px;
-  background: #f4f4fd;
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 240px;
+    background: #f4f4fd;
+    display: flex;
+    flex-direction: column;
 }
 
 .card-sec .container .ourteam {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding-top: 120px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11111;
   letter-spacing: 0.02em;
   text-align: center;
   color: var(--h2-color);
+  margin-bottom: 72px;
 }
-.card-sec .container ul {
+.card-sec .container .ourteam-list {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -231,32 +231,23 @@ a {
   padding: 72px 156px 120px 156px;
 }
 
-.card-sec .container li {
-  display: inline-block;
-  width: 264px;
-  height: 104px;
-  vertical-align: center;
+.card-sec .container .ourteam-item {
+  border-radius: 0px 0px 4px 4px;
+  width: calc((100% - 72px) / 4);
 }
-.card-sec .container .camila,
-.card-sec .container .mark,
-.card-sec .container .tom,
-.card-sec .container .daniel {
-  width: 264px;
+.card-sec .container .ourteam-card{
+  padding: 32px 0;
   display: flex;
   flex-direction: column;
   gap: 0;
 }
 
-.card-sec .container .mark-text,
-.card-sec .container .tom-text,
-.card-sec .container .camila-text,
-.card-sec .container .daniel-text {
+.card-sec .container .ourteam-text{
   width: 264px;
-  height: 120px;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   background: #fff;
-  text-align: center;
+  
   display: flex;
   position: relative;
   flex-direction: column;
@@ -264,18 +255,15 @@ a {
   gap: 8px;
 }
 
-.card-sec .container .mark-text h3,
-.card-sec .container .tom-text h3,
-.card-sec .container .camila-text h3,
-.card-sec .container .daniel-text h3 {
+.card-sec .container .ourteam-text .ourteam-title {
   font-size: 18px;
+  text-align: center;
+  margin-bottom: 8px;
 }
 
-.card-sec .container .mark-text p,
-.card-sec .container .tom-text p,
-.card-sec .container .camila-text p,
-.card-sec .container .daniel-text p {
+.card-sec .container .ourteam-text .ourteam-job{
   font-size: 14px;
+  text-align: center;
 }
 
 /* OUR PORTFOLIO*/
