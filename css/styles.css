@@ -195,9 +195,7 @@ a {
 }
 
 .white-sec .container .emc-item{
-  width :calc((100% - 3 * 24px) / 4);
-  display: inline-block;
-  vertical-align: center;
+ width: calc((100% - 72px) / 4); 
 }
 
 .white-sec .container .emc-item .white-one{
